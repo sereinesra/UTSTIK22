@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+	<hr>
+	<h2 style="text-align: center;">RANGKUMAN POLA BILANGAN</h2>
+	<br>
+	<ul style="margin-left: -20px;">
+			<li style="text-align: justify;">Pola bilangan adalah sekumpulan bilangan-bilangan yang membentuk suatu himpunan atau kumpulan bilangan dengan pola tertentu.</li>
+			<li>Pola bilangan meliputi:
+				<ol style="margin-left: -18px;">
+					<li>Pola bilangan ganjil,</li>
+					<li>Pola bilangan genap,</li>
+					<li>Pola bilangan segitiga,</li>
+					<li>Pola bilangan persegi,</li>
+					<li>Pola bilangan persegi panjang, dan</li>
+					<li>Pola bilangan Fibonacci.</li>
+				</ol>
+
+			<li>Rumus-rumus pola bilangan</li>
+			<p style="text-align: center; font-size: smaller;">Tabel 2. 6 Rumus Pola Bilangan</p>
+			<table style="text-align: center; margin-left: 485px;" border="1" align="center" width="250px">
+			<thead>
+				<tr><strong>
+					<th>Pola Bilangan</th>
+					<th>Rumus</th></strong>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Ganjil</td>
+					<td>𝑈<sub>𝑛</sub> = 2𝑛 – 1</td>
+				</tr>
+				<tr>
+					<td>Genap</td>
+					<td>𝑈<sub>𝑛</sub> = 2𝑛</td>
+				</tr>
+				<tr>
+					<td>Persegi</td>
+					<td>𝑈<sub>𝑛</sub> = 𝑛<sup>2</sup></td>
+				</tr>
+				<tr>
+					<td>Persegi Panjang</td>
+					<td>𝑈<sub>𝑛</sub> = 𝑛 (𝑛 + 1)</td>
+				</tr>
+				<tr>
+					<td>Segitiga</td>
+					<td>𝑈<sub>𝑛</sub> = (𝑛 + 1) x 𝑛/2</td>
+				</tr>
+			</tbody>
+			</table>
+		</ul>
+		<br>
+		<hr>
+		<br>
+    <hr>
+    
+<h2 style="text-align: center;">RANGKUMAN BARISAN BILANGAN</h2>
+
+<br>
+<ul style="text-align: justify; margin-left:-20px;">
+    <li>Barisan aritmetika adalah barisan bilangan yang memiliki beda yang sama antara dua suku barisan yang berurutan sehingga membentuk pola yang tetap.</li>
+    <li>Barisan aritmetika terdiri dari dua jenis, yaitu barisan aritmetika naik dan barisan aritmetika turun. Barisan aritmetika naik didefinisikan sebagai barisan yang memiliki beda bernilai positif. Sebaliknya, barisan yang memiliki beda bernilai negatif disebut sebagai barisan aritmetika turun.</li>
+    <li>Barisan geometri adalah barisan bilangan yang memiliki rasio tetap antara dua suku barisan yang berurutan.</li>
+    <li>Barisan geometri naik merupakan barisan yang memiliki rasio lebih besar dari satu. Adapun barisan geometri turun memiliki rasio lebih kecil dari satu.</li>
+    <li>Rumus barisan bilangan.</li>
+    <p style="text-align: center; font-size: smaller;">Tabel 3. 2 Rumus Barisan Bilangan</p>
+    <table style="text-align: center; margin-left: 350px;" border="1" align="center" width="500px">
+    <thead>
+        <tr>
+            <th><strong>Barisan Bilangan</strong></th>
+            <th><strong>Rumus</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Barisan bilangan aritmetika</td>
+            <td>𝑈<sub>𝑛</sub> = 𝑎 + (𝑛 – 1) 𝑏</td>
+        </tr> 
+        <tr>
+            <td>Barisan bilangan geometri</td>
+            <td>𝑈<sub>𝑛</sub> = 𝑎𝑟<sup>(𝑛 - 1)</sup></td>
+        </tr>
+    </tbody>
+    </table>
+    </ul>
+    <br>
+    <hr>
+
+    <h2 style="text-align: center;">RANGKUMAN DERET BILANGAN</h2>
+				
+			<br>
+			
+		<ul  style="text-align: justify; margin-left:-20px;">
+			<li>Deret bilangan adalah jumlah suku-suku dari suatu barisan bilangan.</li>
+			<li>Deret bilangan terbagi menjadi dua, yaitu deret aritmetika dan geometri.</li>
+			<li>Deret aritmetika adalah penjumlahan suku-suku dari barisan aritmetika.</li>
+			<li>Deret geometri adalah penjumlahan suku-suku dari barisan geometri.</li>
+			<li>Rumus deret bilangan:</li>
+			<p style="text-align: center; font-size: smaller;">Tabel 4. 1 Rumus Deret Bilangan</p>
+			<table style="text-align: center; margin-left: 300px;" border="1" width="600px" align="center">
+			<thead>
+				<tr>
+					<th style="text-align: center;"><b>Deret Bilangan</b></th>
+					<th style="text-align: center;"><b>Rumus</b></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				<td>Aritmetika</td>
+				<td> 𝑆<sub>𝑛</sub> = 𝑛/2 (2𝑎 + (𝑛 − 1)𝑏) = 𝑛/2 (𝑎 +  𝑈𝑛)</td>
+				</tr> 
+				<tr>
+				<td>Geometri</td>
+				<td>𝑆𝑛 = 𝑎 (1 - 𝑟<sup>𝑛</sup>)/(1 - 𝑟), 𝑟 < 1 atau 𝑆𝑛 = 𝑎 (𝑟<sup>𝑛</sup> - 1)/(𝑟 - 1), 𝑟 > 1</td>
+				</tr>
+			</tbody>
+		</table>
+		</ul>
+			<br>
+			<hr>
+
+
+    {% endblock %}

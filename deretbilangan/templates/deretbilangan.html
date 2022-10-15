@@ -1,0 +1,215 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<style type="text/css">
+	.RumusDeretGeometri{
+		width: 80%;
+		height: 35px;
+		background: lightgrey;
+		text-align: center;
+		padding: 5px;
+	}
+	.RumusDeretAritmetika{
+		width: 60%;
+		height: 35px;
+		background: lightgrey;
+		text-align: center;
+		padding: 5px;
+	}
+	.hapus-float{
+		clear: both;
+	}
+    .RumusDeretAritmetika{
+				width: 60%;
+				height: 35px;
+				background: lightgrey;
+				text-align: center;
+				padding: 5px;
+	}
+    .RumusDeretGeometri{
+				width: 80%;
+				height: 35px;
+				background: lightgrey;
+				text-align: center;
+				padding: 5px;
+	}
+</style>
+<center><h1>DERET BILANGAN</h1></center>
+		<br>
+		<div class="hapus-float"></div>
+		<center>
+            <img src="\static\images\4. 1.png" width="250px">
+        </center>
+        <p style= "text-align: center">Gambar 4. 1</p>
+        <p style= "text-align: justify;">Gambar 4. 1 memperlihatkan 
+		gedung serba guna A yang memiliki 20 
+		baris tempat duduk. Pada baris paling 
+		depan tersedia 6 tempat duduk. Setiap 
+		baris tempat duduk tersebut memiliki 6
+		kursi lebih banyak daripada baris di 
+		depannya. Berapa jumlah tempat duduk 
+		yang ada pada gedung serba guna A 
+		tersebut?</p>
+		<br>
+		<p style= "text-align: justify;">Pada materi sebelumnya, kamu telah mempelajari materi barisan bilangan, baik itu barisan aritmetika maupun geometri. Lalu, bagaimana jika pada barisan bilangan tersebut suku-sukunya dijumlahkan? Dapatkah kamu menghitungnya? Coba perhatikan kembali gambar di atas.</p>
+		<br>
+		<p style= "text-align: justify;">Apabila barisan tempat duduk tersebut dibentuk dalam pola barisan bilangan maka terbentuk:</p>
+			<p style= "text-align: center;">6, 12, 18, 24, 30, . . . , 𝑈<sub>𝑛</sub></p>
+		<p style= "text-align: justify;">Jika barisan bilangan tersebut dijumlahkan akan menjadi:</p>
+			<p style= "text-align: center;">6 + 12 + 18 + 24 + 30 + . . . + 𝑈<sub>𝑛</sub></p>
+		<br>
+		<p style= "text-align: justify;">Bentuk dari penjumlahan suku-suku tersebut disebut deret bilangan. Jadi, deret bilangan adalah <strong>jumlah suku-suku dari suatu barisan bilangan</strong></p>
+		<br>
+		<p style= "text-align: justify;">Deret bilangan pada matematika juga terbagi menjadi dua, yaitu deret aritmetika dan deret geometri. Apakah kamu tahu apa yang membedakan kedua deret bilangan tersebut? Mari pahami materi deret bilangan di bawah ini.</p>
+		<br>
+		<hr>
+        <br>
+        <hr>
+
+        <h2>A. DERET ARITMETIKA</h2>
+		<br>
+		<p style= "text-align: justify;">Perhatikanlah pola barisan aritmetika di bawah ini.</p>
+		<p style= "text-align: center;">4, 9, 14, 19, … , 𝑈𝑛</p>
+		<p style= "text-align: justify;">Apabila barisan aritmetika tersebut ingin dijumlahkan maka terbentuklah pola deret aritmetika sebagai berikut.</p>
+		<p style= "text-align: center;">4 + 9 + 14 + 19 + … + 𝑈𝑛</p>
+		<p style= "text-align: justify;">Dari contoh di atas, dapat disimpulkan bahwa deret aritmetika adalah <strong>penjumlahan suku-suku dari barisan aritmetika.</strong></p>
+		<br>
+		<hr>
+		<br>
+
+		<h3>CONTOH SOAL</h3>
+		<br>
+		<ol style="margin-left: -25px;" type="1">
+			<li style= "text-align: justify;">Tentukan pola deret aritmetika dari suatu barisan yang memiliki suku pertama 7 dan beda 2.</li>
+			<p><strong>Jawab:</strong></p>
+			<p>𝑎 = 7, 𝑏 = 2</p>
+			<ul style="margin-left: -25px;">
+				<li>Pola barisan aritmetika:</li>
+				<p>7, 9, 11, 13, 15, 17, 19, 21, 𝑈𝑛</p>
+				<li>Pola deret aritmetika:</li>
+				<p>7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 𝑈𝑛</p>
+			</ul>
+		</ol>
+			<br>
+			<hr>
+			<br>
+
+			<p style= "text-align: justify;">Setelah kamu mengetahui cara membentuk pola deret aritmetika, kamu perlu memahami cara untuk mencari jumlah dari pola deret tersebut. Deret aritmetika yang memiliki suku sedikit dapat dengan mudah untuk dihitung. Akan tetapi, deret yang memiliki suku banyak akan lebih sulit dan membutuhkan waktu yang tidak cepat. Oleh karena itu, amatilah uraian cara menentukan jumlah n suku pertama deret aritmetika berikut dengan teliti.</p>
+			<br>
+
+			<p style= "text-align: justify;">Misalkan, jumlah n suku pertama suatu deret aritmetika adalah 𝑆𝑛 maka</p>
+			<p style= "text-align: center;">𝑆<sub>𝑛</sub> = 𝑈<sub>1</sub> + 𝑈<sub>2</sub> + 𝑈<sub>3</sub> + ⋯ + 𝑈<sub>𝑛</sub></p>
+			<p style= "text-align: justify;">Seperti yang sudah dipahami sebelumnya bahwa 𝑈<sub>𝑛</sub> = 𝑎 + (𝑛 − 1) 𝑏 maka diperoleh:</p>
+			<p style= "text-align: justify;">𝑆<sub>𝑛</sub> = 𝑎 + (𝑎 + 𝑏) + (𝑎 + 2𝑏) + ⋯ + (𝑎 + (𝑛 − 1)𝑏)</p>
+			<p style= "text-align: justify;">𝑆<sub>𝑛</sub> = (𝑎 + (𝑛 − 1)𝑏) + ⋯ + (𝑎 + 2𝑏) + (𝑎 + 𝑏) + 𝑛</p>
+			<p style= "text-align: justify;">___________________________________________ +</p>
+			<p style= "text-align: justify;">2𝑆<sub>𝑛</sub> = (2𝑎 + (𝑛 − 1)𝑏) + 2𝑎 + (𝑛 − 1)𝑏) + ... + 2𝑎 + (𝑛 − 1)𝑏)</p>
+			<p style= "text-align: justify;">𝑆<sub>𝑛</sub> = 𝑛 ((2𝑎 + (𝑛 − 1)𝑏)/2)</p>
+			<p style= "text-align: justify;">𝑆<sub>𝑛</sub> = 𝑛/2 (2𝑎 + (𝑛 − 1)𝑏)</p>
+			<br>
+
+			<p style= "text-align: justify;">Oleh karena 𝑈<sub>𝑛</sub> = 𝑎 + (𝑛 − 1) 𝑏 maka dapat diperoleh rumus sebagai berikut.</p>
+			<p style= "text-align: justify;">𝑆<sub>𝑛</sub> = 𝑛/2 (2𝑎 + (𝑛 − 1)𝑏) = 𝑛/2 (𝑎 +  𝑈𝑛)</p>
+			<br>
+
+			<p style= "text-align: justify;">Dapat disimpulkan rumus pada deret aritmetika yaitu:</p>
+			<div class="RumusDeretAritmetika"><strong>𝑆<sub>𝑛</sub> = 𝑛/2 (2𝑎 + (𝑛 − 1)𝑏) = 𝑛/2 (𝑎 +  𝑈𝑛)</strong></div>
+			<br>
+			
+			<p style= "text-align: justify;">Untuk memahaminya lebih lanjut, perhatikanlah contoh deret aritmetika berikut</p>
+			<br>
+			<hr>
+			<br>
+
+			<h3>CONTOH SOAL</h3>
+			<br>
+			<ol style="margin-left: -25px;" type="1">
+				<li>Suatu deret aritmetika memiliki pola sebagai berikut.</li>
+				<p>17 + 21 + 25 + 29 + ⋯ + 𝑈<sub>13</sub></p>
+				<p>Tentukan:</p>
+				<ol style="margin-left: -20px;" type="a">
+					<li>Suku ketiga belas (𝑈<sub>13</sub>)</li>
+					<li>Jumlah delapan suku pertama (𝑆<sub>8</sub>)</li>
+				</ol>
+			</ol>
+				<p style="margin-left: 15px;"><strong>Jawab:</strong></p>
+				<p style="margin-left: 15px;">Diketahui 𝑎 = 17 dan 𝑏 = 4</p>
+				<ol style="margin-left: -5px;" type="a">
+					<li>𝑈<sub>13</sub> = 𝑎 + (𝑛 − 1)𝑏</li>
+					<p>𝑈<sub>13</sub> = 17 + (13 − 1) 4</p>
+					<p>𝑈<sub>13</sub> = 65</p>
+					<li>𝑆<sub>8</sub> = 8/2 (2 (17) + (8 - 1)4)</li>
+					<p>𝑆<sub>8</sub> = 4 (34 + 28)</p>
+					<p>𝑆<sub>8</sub> = 248</p>
+				</ol>
+			
+			<br>
+			<hr>
+			<br>
+
+			<p style= "text-align: justify;">Berikut merupakan sifat-sifat dari suatu deret aritmetika.</p>
+			<ul style= "text-align: justify; margin-left: -20px;">
+				<li>Jika diketahui deret aritmetika berpola 𝑈<sub>1</sub> + 𝑈<sub>2</sub> + 𝑈<sub>3</sub> + … + 𝑈<sub>𝑛</sub> maka berlaku:</li>
+				<ul style="margin-left: -20px;" type="1">
+					<li>𝑈<sub>2</sub> – 𝑈<sub>1</sub> = 𝑈<sub>3</sub> – 𝑈<sub>2</sub> = 𝑈<sub>4</sub> − 𝑈<sub>3</sub> = … = 𝑈<sub>𝑛</sub> − 𝑈<sub>𝑛−1</sub></li>
+					<li>𝑈<sub>2</sub> = 𝑈<sub>1</sub> + 𝑈<sub>3</sub></li>
+				</ul>
+				<li>Jika 𝑈<sub>𝑚</sub> dan 𝑈<sub>𝑛</sub> adalah suku-suku deret aritmetika maka:</li>
+				<p>𝑈<sub>𝑚</sub> = 𝑈<sub>𝑛</sub> + (𝑚 − 𝑛)𝑏</p>
+			</ul>
+			<br>
+			<hr>
+            <br>
+            <hr>
+
+            <h2>B. DERET GEOMETRI</h2>
+		<br>
+		<p style="text-align: justify;">Seperti barisan aritmetika yang memiliki deret, barisan geometri juga memiliki pola dalam bentuk deret. <strong>Penjumlahan suku-suku dari barisan geometri</strong> itulah yang disebut sebagai deret geometri. Lalu, apakah kamu tahu bagaimana pola dari deret geometri?</p>
+		<p style="text-align: justify;">Perhatikan contoh pola berikut.</p>
+		<p style="text-align: center;">9, 18, 36, … , 𝑈𝑛</p>
+		<p style="text-align: justify;">Pola di atas merupakan pola barisan geometri. Untuk menjumlahkan suku-suku dari barisan geometri tersebut, maka terbentuk pola sebagai berikut.</p>
+		<p style="text-align: center;">9 + 18 + 36 + … + 𝑈𝑛</p>
+		<br>
+		<hr>
+		<br>
+
+		<h3>CONTOH SOAL</h3>
+		<br>
+		<p style="text-align: justify;">Perhatikan contoh soal berikut agar lebih memahami mengenai deret geometri.</p>
+		<ol style="margin-left: -20px;" type="1">
+			<li style="text-align: justify;"> Tentukan pola deret geometri dari suatu barisan yang memiliki suku pertama 7 dan rasio 2!</li>
+			<p><strong>Jawab:</strong></p>
+			<p>𝑎 = 7, 𝑟 = 2</p>
+			<ul style="text-align: justify; margin-left: -20px;">
+				<li>Pola barisan aritmetika:</li>
+				<p>7, 14, 28, 56, … ,𝑈𝑛</p>
+				<li>Pola deret aritmetika:</li>
+				<p>7 + 14 + 28 + 56 + ⋯ + 𝑈𝑛</p>
+			</ul>
+		</ol>
+		<br>
+		<hr>
+		<br>
+		<p style="text-align: justify;">Lalu, kamu akan mempelajari cara untuk mencari jumlah n suku pertama dari deret geometri. Misalkan, jumlah n suku pertama suatu deret geometri adalah 𝑆𝑛 maka</p>
+		<p style="text-align: center;">𝑆<sub>𝑛</sub> = 𝑈<sub>1</sub> + 𝑈<sub>2</sub> + 𝑈<sub>3</sub> + ⋯ + 𝑈<sub>𝑛</sub></p>
+		<p style="text-align: justify;">Seperti yang sudah diketahui sebelumnya bahwa 𝑈<sub>𝑛</sub> = 𝑎𝑟<sup>(𝑛−1)</sup> maka diperoleh:</p>
+		<p style="text-align: justify;">𝑆<sub>𝑛</sub> = 𝑎 + 𝑎𝑟 + 𝑎𝑟<sup>2</sup> + … + 𝑎𝑟<sup>(𝑛−1)</sup> … (1)</p>
+		<p style="text-align: justify;">Kemudian, kedua ruas dikali dengan 𝑟 maka</p> 
+		<p style="text-align: justify;">𝑟𝑆<sub>𝑛</sub> = 𝑎𝑟 + 𝑎𝑟<sup>2</sup> + 𝑎𝑟<sup>3</sup> + … + 𝑎𝑟<sup>𝑛</sup> … (2)</p>
+		<p style="text-align: justify;">Eliminasi persamaan (1) dan (2)</p>
+		<p style="text-align: justify;">𝑆<sub>𝑛</sub> = 𝑎 + 𝑎𝑟 + 𝑎𝑟<sup>2</sup> + … + 𝑎𝑟<sup>(𝑛−1)</sup> … (1)</p>
+		<p style="text-align: justify;">𝑟𝑆<sub>𝑛</sub> = 𝑎𝑟 + 𝑎𝑟<sup>2</sup> + 𝑎𝑟<sup>3</sup> + … + 𝑎𝑟<sup>𝑛</sup> … (2)</p>
+		<p>__________________________________________________________ -</p>
+		<p style="text-align: justify;">𝑆<sub>𝑛</sub> - 𝑟𝑆<sub>𝑛</sub> = 𝑎 - 𝑎𝑟<sup>𝑛</sup> </p>
+		<p style="text-align: justify;">𝑆<sub>𝑛</sub> (1 - 𝑟) = 𝑎 (1 - 𝑟<sup>𝑛</sup>)</p>
+		<p style="text-align: justify;">𝑆𝑛 = 𝑎 (1 - 𝑟<sup>𝑛</sup>)/(1 - 𝑟), 𝑟 < 1 atau 𝑆𝑛 = 𝑎 (𝑟<sup>𝑛</sup> - 1)/(𝑟 - 1), 𝑟 > 1</p>
+		<br>
+
+		<p style="text-align: justify;">Dapat disimpulkan rumus pada deret geometri yaitu:</p>
+		<div class="RumusDeretGeometri"><strong>𝑆𝑛 = 𝑎 (1 - 𝑟<sup>𝑛</sup>)/(1 - 𝑟), 𝑟 < 1 atau 𝑆𝑛 = 𝑎 (𝑟<sup>𝑛</sup> - 1)/(𝑟 - 1), 𝑟 > 1</strong></div>
+		<br>
+		<hr>
+{% endblock %}

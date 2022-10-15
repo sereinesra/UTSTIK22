@@ -1,0 +1,504 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<style type="text/css">
+	.IstilahBarisanBilangan{
+				width: 80%;
+				height: 25px;
+				background: lightgrey;
+				text-align: justify;
+				padding: 10px;
+				border-left: 2px double black;
+				border-right: 2px double black;
+				border-top: 2px double black;
+			}
+			.IstilahBB1{
+				width: 80%;
+				height: 25px;
+				background: lightgrey;
+				text-align: justify;
+				padding: 10px;
+				border-left: 2px double black;
+				border-right: 2px double black;
+			}
+			.IstilahBB2{
+				width: 80%;
+				height: 25px;
+				background: lightgrey;
+				text-align: justify;
+				padding: 10px;
+				border-left: 2px double black;
+				border-right: 2px double black;
+			}
+			.IstilahBB3{
+				width: 80%;
+				height: 25px;
+				background: lightgrey;
+				text-align: justify;
+				padding: 10px;
+				border-left: 2px double black;
+				border-right: 2px double black;
+			}
+			.IstilahBB4{
+				width: 80%;
+				height: 25px;
+				background: lightgrey;
+				text-align: justify;
+				padding: 10px;
+				border-left: 2px double black;
+				border-right: 2px double black;
+				border-bottom: 2px double black;
+			}
+			.RumusBarisanAritmetika{
+				width: 40%;
+				height: 25px;
+				background: lightgrey;
+				text-align: center;
+				padding: 5px;
+			}
+			.RumusBarisanGeometri{
+				width: 40%;
+				height: 25px;
+				background: lightgrey;
+				text-align: center;
+				padding: 5px;
+			}
+			.PolaBarisanGeo{
+				float: left;
+				margin-right: 50px;
+			}
+			.ConSolBarisGeo{
+				width: 60%;
+				height: 30px;
+				text-align: justify;
+				padding: 10px;
+				border-top: 2px double black;
+				border-right: 2px double black;
+				border-left: 2px double black;
+				border-top-color: yellowgreen;
+				border-right-color: yellowgreen;
+				border-left-color: yellowgreen;
+			}
+			.ConSolBarisGeo2{
+				width: 60%;
+				height: 30px;
+				text-align: justify;
+				padding: 10px;
+				border-right: 2px double black;
+				border-left: 2px double black;
+				border-color: yellowgreen;
+			}
+			.ConSolBarisGeo3{
+				width: 60%;
+				height: 30px;
+				text-align: justify;
+				padding: 10px;
+				border-right: 2px double black;
+				border-left: 2px double black;
+				border-color: yellowgreen;
+			}
+			.ConSolBarisGeo4{
+				width: 60%;
+				height: 30px;
+				text-align: justify;
+				padding: 10px;
+				border-right: 2px double black;
+				border-left: 2px double black;
+				border-color: yellowgreen;
+			}
+			.ConSolBarisGeo5{
+				width: 60%;
+				height: 30px;
+				text-align: justify;
+				padding: 10px;
+				border-right: 2px double black;
+				border-left: 2px double black;
+				border-color: yellowgreen;
+			}
+			.ConSolBarisGeo6{
+				width: 60%;
+				height: 30px;
+				text-align: justify;
+				padding: 10px;
+				border-bottom: 2px double black;
+				border-right: 2px double black;
+				border-left: 2px double black;
+				border-color: yellowgreen;
+			}
+			.BarisanArit{
+				float: left;
+				margin-right: 50px;
+			}
+			.hapus-float{
+				clear: both;
+			}
+            .IstilahBarisanBilangan{
+				width: 90%;
+				height: 40px;
+				background: lightgrey;
+				text-align: justify;
+				padding: 10px;
+				border-left: 2px double black;
+				border-right: 2px double black;
+				border-top: 2px double black;
+			}
+			.IstilahBB1{
+				width: 90%;
+				height: 40px;
+				background: lightgrey;
+				text-align: justify;
+				padding: 10px;
+				border-left: 2px double black;
+				border-right: 2px double black;
+			}
+			.IstilahBB2{
+				width: 90%;
+				height: 40px;
+				background: lightgrey;
+				text-align: justify;
+				padding: 10px;
+				border-left: 2px double black;
+				border-right: 2px double black;
+			}
+			.IstilahBB3{
+				width: 90%;
+				height: 40px;
+				background: lightgrey;
+				text-align: justify;
+				padding: 10px;
+				border-left: 2px double black;
+				border-right: 2px double black;
+			}
+			.IstilahBB4{
+				width: 90%;
+				height: 40px;
+				background: lightgrey;
+				text-align: justify;
+				padding: 10px;
+				border-left: 2px double black;
+				border-right: 2px double black;
+				border-bottom: 2px double black;
+			}
+			.RumusBarisanAritmetika{
+				width: 40%;
+				height: 40px;
+				background: lightgrey;
+				text-align: center;
+				padding: 5px;
+			}
+			.BarisanArit{
+				float: left;
+				margin-right: 50px;
+			}
+			.hapus-float{
+				clear: both;
+			}
+
+            .RumusBarisanGeometri{
+				width: 40%;
+				height: 35px;
+				background: lightgrey;
+				text-align: center;
+				padding: 5px;
+			}
+			.PolaBarisanGeo{
+				float: left;
+				margin-right: 50px;
+			}
+			.ConSolBarisGeo{
+				width: 60%;
+				height: 30px;
+				text-align: justify;
+				padding: 10px;
+				border-top: 2px double black;
+				border-right: 2px double black;
+				border-left: 2px double black;
+				border-top-color: yellowgreen;
+				border-right-color: yellowgreen;
+				border-left-color: yellowgreen;
+			}
+			.ConSolBarisGeo2{
+				width: 60%;
+				height: 30px;
+				text-align: justify;
+				padding: 10px;
+				border-right: 2px double black;
+				border-left: 2px double black;
+				border-color: yellowgreen;
+			}
+			.ConSolBarisGeo3{
+				width: 60%;
+				height: 30px;
+				text-align: justify;
+				padding: 10px;
+				border-right: 2px double black;
+				border-left: 2px double black;
+				border-color: yellowgreen;
+			}
+			.ConSolBarisGeo4{
+				width: 60%;
+				height: 30px;
+				text-align: justify;
+				padding: 10px;
+				border-right: 2px double black;
+				border-left: 2px double black;
+				border-color: yellowgreen;
+			}
+			.ConSolBarisGeo5{
+				width: 60%;
+				height: 30px;
+				text-align: justify;
+				padding: 10px;
+				border-right: 2px double black;
+				border-left: 2px double black;
+				border-color: yellowgreen;
+			}
+			.ConSolBarisGeo6{
+				width: 60%;
+				height: 30px;
+				text-align: justify;
+				padding: 10px;
+				border-bottom: 2px double black;
+				border-right: 2px double black;
+				border-left: 2px double black;
+				border-color: yellowgreen;
+			}
+			.BarisanArit{
+				float: left;
+				margin-right: 50px;
+			}
+			.hapus-float{
+				clear: both;
+			}
+</style>
+
+<center><h1>BARISAN BILANGAN</h1></center>
+		<br>
+
+		<p style="text-align: justify;">Barisan bilangan pada matematika terbagi menjadi dua, yaitu barisan <b>aritmetika</b> dan barisan <b>geometri</b>. Apakah kamu tahu apa yang membedakan kedua barisan tersebut? Mari pahami materi di bawah ini.</p>
+		<br>
+		<p style="text-align: justify;">Sebelum memahami lebih lanjut mengenai barisan aritmetika dan geometri, kamu harus tahu terlebih dahulu mengenai barisan bilangan.</p>
+		<p style="text-align: justify;">Perhatikan pola bilangan berikut.
+		<ol style="margin-left: 17px;" type="(a)">
+			<li>35, 40, 45, 50, 55, …</li>
+			<li>7, 10, 13, 16, 19, …</li>
+			<li>26, 20, 14, 8, 2, …</li>
+		</ol>
+		<br>
+		<p style="text-align: justify;">Pola bilangan tersebut disusun sesuai aturan tertentu. Bilangan.-bilangan yang disusun dengan suatu aturan atau pola tertentu itulah yang disebut dengan <strong>barisan bilangan</strong>. Dalam setiap bilangan yang ada pada pola disebut sebagai <strong>suku barisan</strong>. Suku ke-n barisan dilambangkan dengan 𝑈<sub>𝑛</sub>.</p>
+		<br>
+		<p style="text-align: justify;">Perhatikan kembali pola 35, 40, 45, 50, 55, …. Pada pola tersebut, bilangan 35 merupakan suku pertama (𝑈<sub>1</sub>), 40 merupakan suku kedua (𝑈<sub>2</sub>), 45 merupakan suku ketiga (𝑈<sub>3</sub>), 50 merupakan suku keempat (𝑈<sub>4</sub>), 55 merupakan suku kelima (𝑈<sub>5</sub>), dan seterusnya (𝑈<sub>𝑛</sub>). </p>
+		<br>
+		<p style="text-align: justify;">Setelah memahaminya, dapatkah kamu menentukan tiap-tiap bilangan pada pola (b) dan (c) yang merupakan suku pertama, kedua, ketiga, dan seterusnya? Apabila belum memahaminya, silakan pahami ulang. Setelah itu, pahamilah contoh berikut untuk memahaminya lebih lanjut.</p>
+		<br>
+		<hr>
+		<br>
+
+		<h3>CONTOH SOAL</h3>
+		<br>
+		<ol type="1" style="margin-left: -35px;">
+			<li style="text-align: justify; margin-left: 15px;">Suatu barisan bilangan memiliki pola 2, 4, 6, 8, 10, 12.
+				<p style="text-align: justify;">Tentukan ada berapa suku pada pola bilangan tersebut dan tentukan tiap-tiap bilangan pada setiap sukunya!</p>
+				<p><strong>Jawab:</strong></p>
+				<ul style="margin-left: -25px;" >
+					<li style="text-align: justify;">Ada 6 suku pada pola bilangan tersebut.</li>
+					<li style="text-align: justify;">Tiap-tiap bilangan pada setiap suku</li>
+				</ul>
+				<p style="text-align: center; font-size: smaller;">Tabel 3. 1</p>
+				<table style="text-align: center; margin-left: 500px;" border="1" align="center" width="250px">
+			<thead>
+				<tr><strong>
+					<th>𝑈<sub>𝑛</sub></th>
+					<th>Bilangan</th></strong>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				<td>𝑈<sub>1</sub></td>
+				<td>2</td>
+				</tr> 
+				<tr>
+				<td>𝑈<sub>2</sub></td>
+				<td>4</td>
+				</tr>
+				<tr>
+				<td>𝑈<sub>3</sub></td>
+				<td>6</td>
+				</tr>
+				<tr>
+				<td>𝑈<sub>4</sub></td>
+				<td>8</td>
+				</tr>
+				<tr>
+				<td>𝑈<sub>5</sub></td>
+				<td>10</td>
+				</tr><tr>
+				<td>𝑈<sub>6</sub></td>
+				<td>12</td>
+				</tr>
+			</tbody>
+			</table>
+			<br>
+			<li style="margin-left: 15px;">Tentukan suku ketiga, kelima, dan kesembilan dari pola bilangan berikut.
+				<p style="text-align: center;">98, 95, 92, 89, 86, 83, 80, 77, 74, 71</p></li>
+				<p style="margin-left: 17px;"><strong>Jawab:</strong></p>
+				<ul style="margin-left: -10px;">
+					<li>𝑈3 = 92</li>
+					<li>𝑈5 = 86</li>
+					<li>𝑈9 = 74</li>
+				</ul>
+			</li>
+		</ol>
+		</p>
+		<br>
+		<hr>
+        <br>
+        <hr>
+
+        <h2>A. BARISAN ARITMETIKA</h2>
+		<br>
+		<p style="text-align: justify;">Pernahkah kamu menabung uang di koperasi sekolah? Jika kamu menabung pada minggu pertama berjumlah Rp10.000,00, minggu kedua berjumlah Rp15.000,00, minggu ketiga berjumlah Rp20.000,00, dan tiap minggu setelahnya bertambah Rp5.000,00. Berapa tabunganmu pada minggu kesepuluh? Dapatkah kamu mengetahuinya dengan menggunakan konsep barisan aritmetika? Simak materi berikut</p>
+		<br>
+		<p style="text-align: justify;">Barisan bilangan pertama yaitu barisan aritmetika. Barisan aritmetika adalah barisan bilangan yang memiliki selisih atau <strong>beda</strong> yang sama antara dua suku barisan yang berurutansehingga membentuk pola yang tetap.</p>
+		<br>
+		<p>Perhatikan gambar berikut.</p>
+		<div class="hapus-float"></div>
+		<img class="BarisanArit" src="\static\images\Barisan Aritmetika.png" width="300px">
+		<p style="font-size: smaller;" class="hapus-float">Gambar 3. 1 Barisan Aritmetika</p>
+		<br>
+		<p style="text-align: justify;">Barisan bilangan di atas memiliki beda 3 antara dua suku yang berurutan. Perlu diperhatikan, beda pada barisan aritmetika haruslah sama. Apabila selisihnya berbeda, maka tidak termasuk barisan aritmetika.</p>
+		<br>
+		<p style="text-align: justify;">Dari uraian di atas, didapat bahwa pada barisan aritmetika terdapat istilah yang harus selalu diingat, yaitu beda. Untuk itu, ingtalah istilah-istilah berikut.</p>
+		<br>
+		<div style="text-align: center;" class="IstilahBarisanBilangan"><strong>ISTILAH PADA BARISAN BILANGAN</strong></div>
+		<div class="IstilahBB1">- Urutan bilangan = Suku, dilambangkan dengan 𝑈</div>
+		<div class="IstilahBB2">- Urutan bilangan ke-𝑛 = Suku ke-𝑛, Dilambangkan dengan 𝑈𝑛</div>
+		<div class="IstilahBB3">- Suku pertama, dilambangkan dengan a</div>
+		<div class="IstilahBB4">- Selisih atau beda, dilambangkan dengan 𝑏</div>
+		<br>
+
+		<p style="text-align: justify;">Barisan aritmetika terdiri dari dua jenis, yaitu barisan aritmetika naik dan barisan aritmetika turun. Barisan aritmetika naik didefinisikan sebagai barisan yang memiliki beda bernilai positif. Sebaliknya, barisan yang memiliki beda bernilai negatif disebut sebagai barisan aritmetika turun.</p>
+		<br>
+		<hr>
+		<br>
+
+		<h3>CONTOH SOAL</h3>
+		<br>
+		<ol style="text-align: justify; margin-left: -25px;" type="1">
+			<li>21, 23, 25, 27, 29 merupakan barisan aritmetika jenis …
+				<p><strong>Jawab:</strong></p>
+				<p>Pola tersebut merupakan barisan aritmetika naik karena bedanya bernilai positif 2.</p></li>
+			<li>Tentukan jenis barisan aritmetika dari pola berikut: 8, 5, 2, −1, −4
+				<p><strong>Jawab:</strong></p>
+				<p>Pola tersebut memiliki beda -3 sehingga termasuk barisan aritmetika turun.
+				</p></li>
+		</ol>
+		<br>
+		<hr>
+
+		<br>
+		<p style="text-align: justify;">Untuk mencari suku ke-n dari suatu barisan aritmetika, kamu dapat menggunakan rumus berikut.</p>
+		<div class="RumusBarisanAritmetika">𝑼𝒏 = 𝒂 + (𝒏 – 𝟏) 𝒏</div>
+		<br>
+		<hr>
+		<br>
+		<h3>CONTOH SOAL</h3>
+		<br>
+		<ol style="text-align: justify; margin-left: -25px;" type="1">
+			<li>Suatu barisan aritmetika memiliki pola yaitu 37, 45, 53, 61, 69, 77
+			<p>Tentukan:</p></li>
+			<ol style="margin-left: -15px;" type="a">
+			<li>𝑎</li>
+			<li>𝑏</li>
+			<li>Suku ke-5</li>
+			<li>Suku ke-10</li>
+			<br>
+		</ol>
+			<p><b>Jawab:</b></p>
+			<ol style="margin-left: -15px;" type="a">
+				<li>𝑎 = suku pertama = 37</li>
+				<li>𝑏 = 45 – 37 = 8</li>
+				<li>𝑈<sub>5</sub> = 61</li>
+				<li>𝑈<sub>10</sub> = 𝑎 + (𝑛 − 1) 𝑏</li>
+					<p>𝑈<sub>10</sub> = 37 + (10 − 1) 8</p>
+					<p>𝑈<sub>10</sub> = 37 + (9) 8</p>
+					<p>𝑈<sub>10</sub> = 37 + 72</p>
+					<p>𝑈<sub>10</sub> = 109</p>
+				</ol>
+			</ol>
+		<br>
+		<hr>
+        <br>
+        <hr>
+        <h2>B. BARISAN GEOMETRI</h2>
+		<br>
+		<p style="text-align: justify;">Setelah memahami barisan aritemtika, kamu juga perlu memahami barisan geometri. Barisan geometri adalah barisan bilangan yang memiliki <strong>rasio</strong> tetap antara dua suku barisan yang berurutan. Pada barisan geometri, selisih antarsuku barisan disebut rasio. Rasio dilambangkan dengan 𝑟. Hal ini berbeda dengan barisan aritmetika. Adapun suku pertama pada barisan geometri juga dilambangkan dengan 𝑎. Berbeda dengan barisan aritmetika, selisih antarsuku barisan disebut rasio.</p>
+		<br>
+		<p style="text-align: justify;">Perhatikan pola pada gambar berikut.</p>
+		<div class="hapus-float"></div>
+		<img class="PolaBarisanGeo" src="\static\images\Pola Barisan Geometri.png" width="300px">
+		<p style="text-align: justify;">Pada pola di samping, terlihat bahwa tiap suku barisan geometri tersebut memiliki rasio 2 (𝑟 = 2).</p>
+		<br>
+		<p style="text-align: justify;">Berdasarkan uraian di atas, terlihat bahwa rasio selalu tetap. Sama seperti barisan aritmetika, barisan geometri juga terdiri dari dua jenis, yaitu barisan geometri naik dan turun. Barisan geometri naik merupakan barisan yang memiliki rasio lebih besar dari satu. Adapun barisan geometri turun memiliki rasio lebih kecil dari satu.</p>
+		<br>
+		<hr>
+		<br>
+		<h3>CONTOH SOAL</h3>
+		<br>
+		<p>Tentukan jenis dan rasio dari barisan geometri berikut.</p>
+		<p style="text-align: center;">7, 14, 28</p>
+		<p><strong>Jawab:</strong></p>
+		<p style="margin-left: 8px;">a) 𝑟 = 𝑈<sub>2</sub>/𝑈<sub>1</sub> = 𝑈<sub>3</sub>/𝑈<sub>2</sub> = 𝑈<sub>𝑛</sub>/𝑈<sub>(𝑛 - 1)</sub> = 14/7 = 28/14 = 2</p>
+		<p style="margin-left: 8px;">b) 𝑟 = 2 sehingga termasuk barisan geometri naik. </p>
+		<br>
+		<hr>
+		<br>
+		
+		<p style="text-align: justify;">Setelah mengetahui apa itu barisan geometri, barisan geometri naik, dan barisan geometri turun, dapatkah kamu mencari suku ke-n dari suatu barisan geometri? Bagaimana perumusan yang dibentuk? Perhatikanlah pola dasar barisan bilangan geometri berikut.</p>
+		<p style="text-align: center;">𝑈<sub>1</sub>, 𝑈<sub>2</sub>, 𝑈<sub>3</sub>, … , 𝑈<sub>𝑛 − 1</sub>, 𝑈<sub>𝑛</sub></p>
+		<br>
+		<p style="text-align: justify;">Suku-suku tersebut memiliki konstanta bilangan sebagai berikut.
+		<p>𝑈<sub>1</sub> = 𝑎</p>
+		<p>𝑈<sub>2</sub> = 𝑈<sub>1</sub> 𝑥 𝑟 = 𝑎 𝑥 𝑟</p>
+		<p>𝑈<sub>3</sub> = 𝑈<sub>2</sub> 𝑥 𝑟 = (𝑎 𝑥 𝑟) 𝑥 𝑟</p>
+		<p>...</p>
+		<p>𝑈<sub>𝑛</sub> = 𝑈<sub>(𝑛 − 1)</sub> 𝑥 𝑟 = (𝑎 𝑥 𝑟(𝑛 − 2)) 𝑥 𝑟 = 𝑎 𝑥 𝑟<sup>(𝑛 − 1)</sup></p>
+		<br>
+		<p style="text-align: justify;">Berdasarkan uraian suku di atas, dapat digunakan rumus sebagai berikut.</p>
+		<div class="RumusBarisanGeometri"><strong>𝑼<sub>𝒏</sub> = 𝒂 𝒙 r<sup>(𝒏−𝟏)</sup></strong></div>
+		<br>
+		<hr>
+		<br>
+
+		<h3>CONTOH SOAL</h3>
+		<br>
+		<p style="text-align: justify;">Perhatikan contoh soal berikut untuk dapat lebih memahaminya.</p>
+		<ol style="margin-left: -20px;" type ="1">
+			<li>Suatu barisan geometri memiliki pola yaitu 16, 32, 64, 128, 256, …</li>
+			<p>Tentukan:</p>
+			<ol style="margin-left: -20px;" type="a">
+				<li>𝑎</li>
+				<li>𝑟</li>
+				<li>Suku ke-3</li>
+				<li>Suku ke-8</li>
+			</ol>
+			<br>
+				<p><strong>Jawab:</strong></p>
+				<ol style="margin-left: -20px;" type="a">
+					<li>𝑎 = suku pertama = 16</li>
+					<li>𝑟 = 𝑈<sub>2</sub>/𝑈<sub>1</sub> = 32/16 = 2 </li>
+					<li>𝑈<sub>5</sub> = 256</li>
+					<li>𝑈<sub>8</sub> = 𝑎𝑟<sup>(𝑛 − 1)</sup></li>
+					<p>𝑈<sub>8</sub> = 16 x 2<sup>(8 − 1)</sup></p>
+					<p>𝑈<sub>8</sub> = 16 x 2<sup>(7)</sup></p>
+					<p>𝑈<sub>8</sub> = 16 x 128</p>
+					<p>𝑈<sub>8</sub> = 2048</p>
+				</ol>
+			</ol>
+		
+		<br>
+		<hr>
+{% endblock %}
